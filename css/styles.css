@@ -1,5 +1,11 @@
 body {
     font-family: "Inter", sans-serif;
+
+    min-height: 100vh;
+    
+    background-repeat: no-repeat;
+    background: #8c3259;
+    background: linear-gradient(337deg, rgba(140, 50, 89, 1) 26%, rgba(47, 52, 69, 1) 100%, rgba(148, 187, 233, 1) 100%);
 }
 
 ul, a {
@@ -9,6 +15,7 @@ ul, a {
 
 #contact-me-pill {
     background-color: #3ad142;
+    height: 4em;
 }
 
 #navUnorderedList li {
@@ -16,7 +23,7 @@ ul, a {
 }
 
 #navUnorderedList li.active::before {
-    content: "•";
-    position: absolute;
+    content: "¯\\_(ツ)_/¯";
+    color: white;
     left: -15px;
 }

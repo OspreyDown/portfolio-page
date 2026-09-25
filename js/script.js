@@ -2,7 +2,12 @@ const init = () => {
     const navLinks = document.querySelectorAll("#navUnorderedList a");
 
     navLinks.forEach((link) => {
-        if (window.location.pathname.endsWith(link.getAttribute("href"))) {
+        const href = link.getAttribute("href");
+
+        if (
+            window.location.pathname.endsWith(href) &&
+            href !== "contactMe.html"
+        ) {
             link.parentElement.classList.add("active");
         }
     });
